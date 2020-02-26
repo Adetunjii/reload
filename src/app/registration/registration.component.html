@@ -1,0 +1,173 @@
+<div class="container" style="margin-top: 150px; margin-bottom: 150px">
+  <mdb-card class=" card-container">
+    <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+      <a>
+        <div class="mask"></div>
+      </a>
+    </div>
+    <div class="title-background">
+      <mdb-card-title class="text-center">
+        <h2 class="reg-font py-3">Registration Form</h2>
+      </mdb-card-title>
+    </div>
+    <div class="container px-5">
+      <mdb-card-body>
+        <form class="text-center p-5" [formGroup]="regForm" (ngSubmit)="submit()">
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-2">
+              <p class="nav-font text-left">Name</p>
+            </div>
+            <div class="mb-2 col-md ">
+              <input type="text" size="sm" formControlName="firstName" class="form-control mr-5"
+                placeholder="First name" style=" background-color:  rgba(247, 247, 247, 0.938)" required>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col">
+              <!-- Last name -->
+              <input type="text" formControlName="lastName" style="background-color:  rgba(247, 247, 247, 0.938)"
+                class="form-control" placeholder="Last name" required>
+            </div>
+          </div>
+
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-2">
+              <p class="text-left nav-font">Email</p>
+            </div>
+
+            <div class="col">
+              <input type="email" style="background-color:  rgba(247, 247, 247, 0.938)" formControlName="email"
+                class="form-control mb-4" placeholder="example@example.com" required
+                pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+            </div>
+          </div>
+          <!-- Phone number -->
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-2">
+              <p class="nav-font text-left">Phone Number</p>
+            </div>
+            <div class="col-sm-3">
+              <!-- Last name -->
+              <input type="text" formControlName="phoneNumber" style="background-color:  rgba(247, 247, 247, 0.938)"
+                class="form-control" placeholder="Phone number" required>
+            </div>
+            <div class="col"></div>
+          </div>
+
+
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-2">
+              <p class="text-left nav-font">Twitter Handle</p>
+            </div>
+            <div class="col-md-6">
+              <input type="text" style="background-color:  rgba(247, 247, 247, 0.938)" formControlName="twitterHandle"
+                class="form-control" placeholder="Please enter your twitter handle here"
+                aria-describedby="twitterHandle" required>
+            </div>
+          </div>
+
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-2">
+              <p class="text-left nav-font">Instagram Handle</p>
+            </div>
+            <div class="col-md-6">
+              <input type="text" style="background-color:  rgba(247, 247, 247, 0.938)" formControlName="instagramHandle"
+                class="form-control" placeholder="Please enter your instagram handle here"
+                aria-describedby="instagramHandle" required>
+            </div>
+          </div>
+
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-2">
+              <p class="text-left nav-font">City</p>
+            </div>
+            <div class="col-md-6">
+              <input type="text" style="background-color:  rgba(247, 247, 247, 0.938)" formControlName="city"
+                class="form-control" aria-describedby="city" required>
+            </div>
+          </div>
+
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-2">
+              <p class="text-left nav-font">University</p>
+            </div>
+            <div class="col-md-6">
+              <input type="text" style="background-color:  rgba(247, 247, 247, 0.938)" formControlName="university"
+                class="form-control" placeholder="Please enter the name of your Institution here"
+                aria-describedby="university" required>
+            </div>
+          </div>
+
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-2">
+              <p class="text-left nav-font">
+                Level
+              </p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <select class="browser-default custom-select" style="background-color:  rgba(247, 247, 247, 0.938)"
+                formControlName="level" required>
+                <option selected>100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-3">
+              <p class="text-left nav-font">
+                Do you consider yourself a vocal person, a sales rep and a marketer?
+              </p>
+            </div>
+            <div class="col-md mx-auto d-flex justify-content-center">
+              <select class="browser-default custom-select" style="background-color:  rgba(247, 247, 247, 0.938)"
+                formControlName="experience" required>
+                <option selected>Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-3">
+              <p class="text-left nav-font">
+                Discuss any experience of yours in marketing and sales.
+              </p>
+            </div>
+            <div class="col-md mx-auto d-flex justify-content-center">
+              <textarea class="form-control" formControlName="description"
+                style="background-color:  rgba(247, 247, 247, 0.938)" aria-label="description" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-row mb-4">
+            <div class="col-sm-12 col-md-3">
+              <p class="text-left nav-font">
+                After hearing about reload energy powder and consumer
+                testimonies, you know the effectiveness, how do you intend to market and sell reload within your
+                jurisdiction?
+              </p>
+            </div>
+            <div class="col-md mx-auto d-flex justify-content-center">
+              <textarea formControlName="salesMethod" aria-label="salesMethod"
+                style="background-color:  rgba(247, 247, 247, 0.938)" class="form-control" required></textarea>
+            </div>
+          </div>
+
+          <button mdbBtn block="true" class="my-5 rounded-btn" type="submit"
+            [disabled]="!regForm.valid">REGISTER</button>
+          <hr>
+
+          <p>By clicking
+            <em>Sign up</em> you agree to our
+            <a href="" target="_blank">terms of service</a></p>
+
+        </form>
+
+      </mdb-card-body>
+    </div>
+  </mdb-card>
+</div>

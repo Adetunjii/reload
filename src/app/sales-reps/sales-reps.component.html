@@ -1,0 +1,22 @@
+<div class="container-fluid" style="margin-top: 100px; margin-bottom: 100px;">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 normal-font" *ngFor="let salesRep of salesReps | async">
+      <mdb-card class="m-2">
+        <mdb-card-img src="../../assets/purple-gradient-background.png" alt=reload></mdb-card-img>
+
+        <mdb-card-body class="p-3">
+          <p><span class="px-2">FULL NAME:</span> {{salesRep.firstName | uppercase}} {{salesRep.lastName | uppercase}}
+          </p>
+          <p><span class="px-2">EMAIL:</span> {{salesRep.email}}</p>
+          <p><span class="px-2">PHONE NUMBER:</span> {{salesRep.phoneNumber}}</p>
+          <p><span class="px-2">TWITTER HANDLE:</span> {{salesRep.twitterHandle}}</p>
+          <p><span class="px-2">INSTAGRAM HANDLE:</span> {{salesRep.instagramHandle}}</p>
+          <p><span class="px-2">CITY:</span> {{salesRep.city}}</p>
+          <p><span class="px-2">UNIVERSITY:</span> {{salesRep.university}}</p>
+          <p><span class="px-2">LEVEL:</span> {{salesRep.level}}</p>
+          <p></p>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+  </div>
+</div>

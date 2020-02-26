@@ -1,0 +1,38 @@
+.card-container {
+  border-radius: 10px;
+}
+
+.title-background {
+  background-color: rgb(56, 11, 94);
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.reg-font {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rounded-btn {
+  border-radius: 20px;
+  box-shadow: 2px;
+  color: white;
+  background-color: rgb(56, 11, 94);
+}
+
+.ng-valid[required],
+.ng-valid,
+.ng-valid.required {
+  border-right: 5px solid #42A948;
+}
+
+.ng-invalid[required] {
+  border-right: 5px solid red;
+}
+
+.ng-pristine[required] {
+  border-right: 5px solid rgb(56, 11, 94);
+}

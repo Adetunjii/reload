@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+
+
+
+.big-font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-about {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.normal-font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-font {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(56, 11, 94);
+}
+
+.text-font {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+
+.btn-font {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.brand-font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(56, 11, 94);
+}
+
+.header-font {
+  font-family: 'Cabin Sketch', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  text-decoration: wavy;
+  color: rgb(56, 11, 94);
+}
+
+
+.top-nav-collapse {
+  background-color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: white;
+  }
+
+}
